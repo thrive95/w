@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Coaching Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #999999;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      gap: 20px;
+    }
+    .section {
+      background-color: #fef3c0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .gray-box {
+      background-color: #cccccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    h3, h4 {
+      margin: 10px 0;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .button {
+      background-color: #fede8d;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #ffd966;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 5px;
+      text-align: left;
+    }
+    .blue {
+      background-color: #0026ff;
+      color: white;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+    .bar {
+      background-color: #3399ff;
+      height: 20px;
+      margin-bottom: 5px;
+      color: white;
+      text-align: right;
+      padding-right: 5px;
+      line-height: 20px;
+    }
+    .chart-circle {
+      width: 150px;
+      height: 150px;
+      background-color: #3399ff;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="gray-box">
+        <h4>Overview</h4>
+        <p><strong>Function:</strong> <span style="color:blue">Picking</span></p>
+        <p><strong>Shift:</strong> 3</p>
+        <p><strong>Year:</strong> 2025</p>
+        <p><strong>Report Date:</strong> <span class="blue">02/25/2025</span></p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee name</th>
+            <th>Function</th>
+            <th>Productivity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Adelin Pimentel</td><td>Packing</td><td>125</td></tr>
+          <tr><td>2</td><td>Aiko Serrano</td><td>Picking</td><td>68</td></tr>
+          <tr><td>3</td><td>Alba Jimenez</td><td>Packing</td><td>25</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="gray-box">
+        <h4>Coaching View</h4>
+        <label>Week:
+          <select><option>13</option></select>
+        </label>
+        <label>Function: <span style="color:blue">Picking</span></label>
+        <label>Site: <span style="color:blue">Hanover</span></label>
+        <label>Associate:
+          <select><option>Adelin Pimentel</option></select>
+        </label>
+        <div class="button">Enter New Coaching</div>
+      </div>
+      <label>Employee's Comments:</label>
+      <textarea rows="6"></textarea>
+      <table>
+        <thead>
+          <tr><th>Competency</th><th>Actual</th><th>% Goal</th><th>CA</th><th>Comments</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Quality</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Productivity</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Effectiveness</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Safety</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Time of Task</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p>Total Score</p>
+      <p>AA Development</p>
+    </div>
+
+    <div class="section">
+      <h4>Historical Data</h4>
+      <div class="bar" style="width: 100%">125</div>
+      <div class="bar" style="width: 54%">68</div>
+      <div class="bar" style="width: 20%">25</div>
+      <div class="chart-circle"></div>
+    </div>
+  </div>
+</body>
+</html>
